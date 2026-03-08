@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound";
 import ComingSoon from "./pages/ComingSoon";
 import DailyVerse from "./pages/DailyVerse";
 import VerseCard from "./pages/VerseCard";
-
+import BibleSearch from "./pages/BibleSearch";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -23,7 +23,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/daily" element={<DailyVerse />} />
             <Route path="/card" element={<VerseCard />} />
-            <Route path="/search" element={<ComingSoon toolName="🔍 經文搜尋 Bible Search" />} />
+            <Route path="/search" element={<BibleSearch />} />
             <Route path="/parallel" element={<ComingSoon toolName="📖 經文對照 Parallel Bible" />} />
             <Route path="/random" element={<ComingSoon toolName="🎲 隨機經文 Random Verse" />} />
             <Route path="/plan" element={<ComingSoon toolName="📅 讀經進度 Reading Plan" />} />
