@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Download, RotateCcw, Type, Palette } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
 import LanguageToggle from "@/components/LanguageToggle";
+import FloatingParticles from "@/components/FloatingParticles";
 import verses, { Verse } from "@/data/verses";
 import html2canvas from "html2canvas";
 
@@ -119,7 +120,8 @@ const VerseCard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col relative overflow-hidden">
+      <FloatingParticles count={20} />
       <LanguageToggle />
 
       {/* Header */}
