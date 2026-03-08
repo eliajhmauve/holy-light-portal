@@ -46,7 +46,8 @@ const DailyVerse = () => {
     : today.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col relative">
+      <FloatingParticles count={20} />
       <LanguageToggle />
 
       {/* Header */}
