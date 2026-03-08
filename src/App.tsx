@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import ComingSoon from "./pages/ComingSoon";
 import DailyVerse from "./pages/DailyVerse";
+import VerseCard from "./pages/VerseCard";
 
 const queryClient = new QueryClient();
 
@@ -21,7 +22,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/daily" element={<DailyVerse />} />
-            <Route path="/card" element={<ComingSoon toolName="🖼️ 金句圖產生器 Verse Card" />} />
+            <Route path="/card" element={<VerseCard />} />
             <Route path="/search" element={<ComingSoon toolName="🔍 經文搜尋 Bible Search" />} />
             <Route path="/parallel" element={<ComingSoon toolName="📖 經文對照 Parallel Bible" />} />
             <Route path="/random" element={<ComingSoon toolName="🎲 隨機經文 Random Verse" />} />
