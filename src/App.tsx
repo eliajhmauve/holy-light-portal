@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound";
 import ComingSoon from "./pages/ComingSoon";
 import DailyVerse from "./pages/DailyVerse";
 import VerseCard from "./pages/VerseCard";
-
+import BibleSearch from "./pages/BibleSearch";
 const queryClient = new QueryClient();
 
 const App = () => (
