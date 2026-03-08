@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { RefreshCw, ArrowLeft, Share2 } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
 import LanguageToggle from "@/components/LanguageToggle";
+import FloatingParticles from "@/components/FloatingParticles";
 import { getDailyVerse } from "@/data/verses";
 import { useMemo, useState } from "react";
 import verses from "@/data/verses";
