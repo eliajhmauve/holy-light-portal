@@ -120,7 +120,8 @@ const VerseCard = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col relative overflow-hidden">
+      <FloatingParticles count={20} />
       <LanguageToggle />
 
       {/* Header */}
