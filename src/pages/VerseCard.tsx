@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Download, RotateCcw, Type, Palette } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
 import LanguageToggle from "@/components/LanguageToggle";
+import FloatingParticles from "@/components/FloatingParticles";
 import verses, { Verse } from "@/data/verses";
 import html2canvas from "html2canvas";
 
