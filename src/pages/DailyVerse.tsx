@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { RefreshCw, ArrowLeft, Share2 } from "lucide-react";
 import { useLang } from "@/contexts/LanguageContext";
 import LanguageToggle from "@/components/LanguageToggle";
+import FloatingParticles from "@/components/FloatingParticles";
 import { getDailyVerse } from "@/data/verses";
 import { useMemo, useState } from "react";
 import verses from "@/data/verses";
@@ -45,7 +46,8 @@ const DailyVerse = () => {
     : today.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col relative">
+      <FloatingParticles count={20} />
       <LanguageToggle />
 
       {/* Header */}
