@@ -74,6 +74,7 @@ const Index = () => {
           <img src={heroImage} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-cathedral-dark/70 via-cathedral-dark/50 to-background" />
         </div>
+        <FloatingParticles />
 
         <div className="relative z-10 flex flex-col items-center justify-center min-h-[70vh] px-6 text-center">
           <motion.div
