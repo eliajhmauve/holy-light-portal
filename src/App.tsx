@@ -18,7 +18,7 @@ const App = () => (
       <LanguageProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/holy-light-portal">
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/daily" element={<DailyVerse />} />
